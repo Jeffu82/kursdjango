@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+Koszt chleba to : {{ chleb }}<br>
+Koszt wody to : {{ woda }}
+<div>
+    Tytul : {{wpis.tytul}}<br>
+    Tresc : {{wpis.tresc}}
+</div>
+<div class="liczby">
+    {% for i in liczby %}
+        {{i}} <br>
+    {% endfor %}
+</div>
+</body>
+</html>
